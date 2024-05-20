@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+</head>
+<style>
+    body{
+        /*As margens são utilizadas para produzir espaço ao redor dos elementos*/
+        margin:0;
+    }
+    .container {
+        display: grid;
+    }
+
+    header { 
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .menu {
+        grid-column-start: 12;
+        grid-column-end: 24;
+        grid-row-start:1;
+        grid-row-end:1;
+        justify-content: center;
+        gap: 60px;
+        
+    }
+
+    .principal {
+        grid-column-start: 4;
+        grid-column-end: 12;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: justify;
+    }
+   
+    div{
+        border: 1px solid #c03684;
+        padding: 50px;
+        background-color: #c03684;
+        color: white;
+        text-align: center;
+
+    }
+
+
+    /*Tag <header> reproduz o cabeçalho de uma página web, nele pode conter
+    um ou mais elementos */
+    header{
+        grid-column-start: 0;
+        grid-column-end: 50;
+        background-color: #c03684;
+    }
+
+     /*O elemento <ul> reproduz uma lista de itens desordenados*/
+    ul{
+        list-style-type: none;
+
+        color: #c03684;
+    }
+
+    a,
+    a:link{
+        text-decoration: none;
+        padding: 12px 25px;
+        border: solid #c03684 2px;
+    }
+
+    /*O elemento <li> representa itens de uma lista*/
+    li{
+        float: left;
+    }
+
+    a:hover {
+        background-color: #c03684;
+        color: white;
+    }
+
+
+    /*media query para aparelho de celular, televisão portátio e entre outros*/
+    @media only screen and(max-width: 767px) {
+      .wrapper{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        
+      }
+      .principal{
+        grid-column-start: 2;
+        grid-column-end: 2;
+
+      }
+
+      }
+</style>
+</head>
+
+<body>
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formação.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+
+<body>
+    <div>
+        <h1>Portifólio</h1>
+    </div>
+</body>
+
+
+<aside>
+   <section class="principal">
+       <p>Portifólio em construção, em breve terei muitas novidades!</p>
+    </section>
+</aside>
+   
+</body>
+    
+
+
+</html>
